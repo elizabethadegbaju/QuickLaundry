@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="quicklaundryDataSet" targetNamespace="http://tempuri.org/quicklaundryDataSet.xsd" xmlns:mstns="http://tempuri.org/quicklaundryDataSet.xsd" xmlns="http://tempuri.org/quicklaundryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="quicklaundryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="quicklaundryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.quicklaundry.Properties.Settings.GlobalReference.Default.quicklaundryConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="laundryTableAdapter" GeneratorDataComponentClassName="laundryTableAdapter" Name="laundry" UserDataComponentName="laundryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="quicklaundryConnectionString (Settings)" DbObjectName="quicklaundry.laundry" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT orderNo, username, status, dropoffAddress, dropoffTime, paid FROM laundry</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="newlaundryTableAdapter" GeneratorDataComponentClassName="newlaundryTableAdapter" Name="newlaundry" UserDataComponentName="newlaundryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="quicklaundryConnectionString (Settings)" DbObjectName="quicklaundry.newlaundry" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT username, jeans, wool, cotton, native, towel, nass, small, pickupTime, pickupAddress, amountDue FROM newlaundry</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usersTableAdapter" GeneratorDataComponentClassName="usersTableAdapter" Name="users" UserDataComponentName="usersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="quicklaundryConnectionString (Settings)" DbObjectName="quicklaundry.users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT username, password, fName, lName, phoneNo, email FROM users</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="quicklaundryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="quicklaundryDataSet" msprop:Generator_UserDSName="quicklaundryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="laundry" msprop:Generator_TableClassName="laundryDataTable" msprop:Generator_TableVarName="tablelaundry" msprop:Generator_TablePropName="laundry" msprop:Generator_RowDeletingName="laundryRowDeleting" msprop:Generator_RowChangingName="laundryRowChanging" msprop:Generator_RowEvHandlerName="laundryRowChangeEventHandler" msprop:Generator_RowDeletedName="laundryRowDeleted" msprop:Generator_UserTableName="laundry" msprop:Generator_RowChangedName="laundryRowChanged" msprop:Generator_RowEvArgName="laundryRowChangeEvent" msprop:Generator_RowClassName="laundryRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="newlaundry" msprop:Generator_TableClassName="newlaundryDataTable" msprop:Generator_TableVarName="tablenewlaundry" msprop:Generator_TablePropName="newlaundry" msprop:Generator_RowDeletingName="newlaundryRowDeleting" msprop:Generator_RowChangingName="newlaundryRowChanging" msprop:Generator_RowEvHandlerName="newlaundryRowChangeEventHandler" msprop:Generator_RowDeletedName="newlaundryRowDeleted" msprop:Generator_UserTableName="newlaundry" msprop:Generator_RowChangedName="newlaundryRowChanged" msprop:Generator_RowEvArgName="newlaundryRowChangeEvent" msprop:Generator_RowClassName="newlaundryRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="users" msprop:Generator_TableClassName="usersDataTable" msprop:Generator_TableVarName="tableusers" msprop:Generator_TablePropName="users" msprop:Generator_RowDeletingName="usersRowDeleting" msprop:Generator_RowChangingName="usersRowChanging" msprop:Generator_RowEvHandlerName="usersRowChangeEventHandler" msprop:Generator_RowDeletedName="usersRowDeleted" msprop:Generator_UserTableName="users" msprop:Generator_RowChangedName="usersRowChanged" msprop:Generator_RowEvArgName="usersRowChangeEvent" msprop:Generator_RowClassName="usersRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
